@@ -1,0 +1,45 @@
+{% load static %}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>RegistrationForm_v7 by Colorlib</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- MATERIAL DESIGN ICONIC FONT -->
+		<link rel="stylesheet" href="{% static 'fonts/material-design-iconic-font/css/material-design-iconic-font.min.css' %}">
+
+		<!-- STYLE CSS -->
+		<link rel="stylesheet" href="{% static 'css/style.css' %}">
+	</head>
+
+<body>
+
+	<div class="wrapper">
+		<div class="inner">
+			<form method="POST" action="">
+				{% csrf_token %}
+				<h3>sign up </h3>`
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+
+
+					<label> <span>{{ form.email }}</span> </label>
+
+
+					<label> <span>{{ form.username }}</span> </label>
+
+
+
+					<label> <span>{{ form.password1 }}</span>  </label>
+
+
+
+					<label>  <span>{{ form.password2 }}</span>  </label>
+
+
+					<input type="submit" name="Submit">
+			</form>
+		</div>
+	</div>
+
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

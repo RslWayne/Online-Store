@@ -1,0 +1,23 @@
+{% extends 'products/base.html' %}
+{% block content %}
+<table>
+    <tr>
+        <td>name</td>
+        <td>Email</td>
+        <td> </td>
+        <td>address</td>
+
+    </tr>
+
+
+    {% for contact in contacts %}
+    <tr>
+
+        <td> {{ contact.name }} </td>
+        <td> {{ contact.email }} </td>
+        <td> {{ contact.firstname}} </td>
+        <td> {{ contact.address }} </td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
